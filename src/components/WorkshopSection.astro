@@ -5,11 +5,14 @@ import Button from "./Button.astro";
 
 <section class={variant}>
 <slot/>
+<Button variant="secondary">
+    Læs mere her
+</Button>
 </section>
 
 
 <style>
-    .workshop{
+    .workshop, .lab{
     color: white;
     padding-inline: 60px;
     padding-block: 40px;

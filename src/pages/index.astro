@@ -1,8 +1,7 @@
 ---
 import Hero from "../components/Hero.astro";
-import Card from "../components/Card.astro";
 import Velkommen from "../components/VelkommenSection.astro";
-import Section from "../components/WorkshopSection.astro";
+import Workshop from "../components/WorkshopSection.astro";
 import Button from "../components/Button.astro";
 ---
 
@@ -17,7 +16,7 @@ import Button from "../components/Button.astro";
 	<body>
 		<main>
 			<header>
-				<img src="./pictures/logo_img.svg" alt="logo billede">
+				<img src="./pictures/logo_img.svg" alt="logo foto">
 			</header>
 			<Hero>
 			</Hero>
@@ -25,29 +24,13 @@ import Button from "../components/Button.astro";
 			<Velkommen>
 			</Velkommen>
 
-			<Section variant="workshop">
-				Workshop section 1
-				<Button variant="secondary">
-					Læs mere her
-				</Button>
-			</Section>
+			<Workshop variant="workshop">
+			</Workshop>
 
-			<Section variant="workshop">
-				Workshop section 2
-				<Button variant="secondary">
-					Læs mere her
-				</Button>
-			</Section>
+			<Workshop variant="lab">
+			</Workshop>
 
-			<Section variant="hold">
-				Hold section
-				<Card variant="voksenhold">card 1</Card>
-				<Card variant="bornehold">card 2</Card>
-			</Section>
-
-			<Section variant="some">
-				Social media section
-			</Section>
+			
 			<footer/>
 		</main>
 		
