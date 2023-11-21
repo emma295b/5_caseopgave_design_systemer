@@ -1,0 +1,18 @@
+---
+const { variant } = Astro.props;
+import Button from "./Button.astro";
+---
+
+<section class={variant}>
+<slot/>
+</section>
+
+
+<style>
+    .workshop{
+    color: white;
+    padding-inline: 60px;
+    padding-block: 40px;
+    align-self: center;
+}
+</style>
