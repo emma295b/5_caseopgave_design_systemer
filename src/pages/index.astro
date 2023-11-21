@@ -11,12 +11,60 @@ import Button from "../components/Button.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Dansestudiet</title>
 	</head>
 	<body>
 		<main>
-			
+			<header>
+				<img src="/public/Logo.svg" alt="logo billede">
+			</header>
+			<Hero>
+				Hero CTA
+			</Hero>
+			<Section variant="velkommen">
+				Velkommen section
+			</Section>
+			<Section variant="workshop">
+				Workshop section 1
+			</Section>
+			<Section variant="workshop">
+				Workshop section 2
+			</Section>
+			<Section variant="hold">
+				Hold section
+			</Section>
+			<Section variant="some">
+				Social media section
+			</Section>
+			<footer/>
 		</main>
 		
 	</body>
 </html>
+
+<style>
+ 	body{
+		margin: 0;
+        padding: 0;
+		background-color: rgb(51, 51, 51);
+ 	}
+
+	header{
+		background-color: rgb(37, 37, 37);
+		padding-inline: 20px;
+		padding-block: 20px;
+		width: auto;
+		height: auto;
+	}
+
+
+	footer{
+		background-color: rgb(37, 37, 37);
+		padding-block: 50px;
+		width: auto;
+		height: auto;
+	}
+
+
+
+</style>
