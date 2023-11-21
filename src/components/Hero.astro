@@ -1,11 +1,41 @@
+---
+import Button from "../components/Button.astro";
+---
+
 <section>
-    <slot/>
+    <div class="image-container"><img src="./pictures/hero_img.svg" alt="hero picture">
+        <div class="overlay-text"> 
+            <h1>Dansestudiet</h1>
+            <p>Bissensgade 14 B8000 Aarhus C</p>
+            <p>DANS PÅ ET SJOVT OG AMBITIØST NIVEAU</p>
+            <Button variant="primary">Tilmeld her</Button>
+        </div>
+        
+    </div>
 </section>
 
 
 <style>
-    section{
-        background-image: ;
+    .image-container {
+        position:relative;
+    }
+
+    .image-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        background-color: rgb(2, 2, 2, 0.5);
+        color: white;
+        text-align: center;
+        padding: 20px;
     }
 
 </style>
