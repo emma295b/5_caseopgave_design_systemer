@@ -1,21 +1,44 @@
 ---
-const { variant } = Astro.props;
+const { titel, beskrivelse, tid, dato, billede } = Astro.props;
 import Button from "./Button.astro";
 ---
 
-<section class={variant}>
-<slot/>
-<Button variant="secondary">
-    Læs mere her
-</Button>
+<section class="grid">
+    <div class="textcontent">
+        <h3>{titel}</h3>
+        <p>{beskrivelse}</p>
+        <div class="grid">
+            <img src="./icons/klokkeicon.svg" alt="">
+            <p>{tid}</p>
+        </div>
+        <div class="grid">
+            <img src="./icons/datoicon.svg" alt="">
+            <p>{dato}</p>
+        </div>
+        <Button variant="secondary">
+            Læs mere her
+        </Button>
+    </div>
+    <img class="billede" src="./pictures/bornehold_img.svg" alt="">
 </section>
 
 
 <style>
-    .workshop, .lab{
+    section{
+    background-color: rgb(20, 20, 20);
     color: white;
-    padding-inline: 60px;
-    padding-block: 40px;
-    align-self: center;
-}
+    text-align: left;
+    }
+
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .textcontent{
+        padding: 60px;
+    }
+
+   
+	
 </style>

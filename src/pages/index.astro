@@ -1,7 +1,7 @@
 ---
 import Hero from "../components/Hero.astro";
-import Velkommen from "../components/VelkommenSection.astro";
-import Workshop from "../components/WorkshopSection.astro";
+import VelkommenSection from "../components/VelkommenSection.astro";
+import WorkshopSection from "../components/WorkshopSection.astro";
 import Hold from "../components/HoldSection.astro";
 import Some from "../components/SomeSection.astro";
 import Button from "../components/Button.astro";
@@ -23,14 +23,29 @@ import Button from "../components/Button.astro";
 			<Hero>
 			</Hero>
 
-			<Velkommen>
-			</Velkommen>
+			<VelkommenSection>
+			</VelkommenSection>
+			
+			<div class="padding">
+			<h2>Nyheder hos Dansestudiet</h2>
+			<WorkshopSection
+			titel="Labortorium"
+			beskrivelse="Movement labortorium med Vittoria"
+			tid="14:00-16:00"
+			dato="Lør. d. 4 feb til Søn. d. 5 feb"
+			/>
+			</div>
+			
+			<div class="padding">
+				<WorkshopSection
+				titel="Labortorium"
+				beskrivelse="Movement labortorium med Vittoria"
+				tid="14:00-16:00"
+				dato="Lør. d. 4 feb til Søn. d. 5 feb"
+				/>
+				</div>
+			
 
-			<Workshop variant="workshop">
-			</Workshop>
-
-			<Workshop variant="lab">
-			</Workshop>
 
 			<Hold></Hold>
 
@@ -49,6 +64,12 @@ import Button from "../components/Button.astro";
 		background-color: rgb(51, 51, 51);
  	}
 
+	 h2{
+		color: white;
+        padding-block: 100px;
+		text-align: center;
+	}
+
 	header{
 		background-color: rgb(37, 37, 37);
 		padding-inline: 20px;
@@ -59,6 +80,9 @@ import Button from "../components/Button.astro";
 	
 
 	/*WORKSHOP SEKTION*/
+	.padding{
+		padding: 40px 400px;
+	}
 
 	footer{
 		background-color: rgb(37, 37, 37);
