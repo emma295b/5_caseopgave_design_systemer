@@ -1,0 +1,65 @@
+:root {
+  --bg-color-primary: #171717;
+  --bg-color-secondary: #f8feff;
+  --bg-color-tertiary: #54bfdd;
+  --text-color-primary: #f8feff;
+  --text-color-secondary: #171717;
+  --text-color-tertiary: #54bfdd;
+  --primary-button-bg-color: #ffe000;
+  --secondary-button-bg-color: #54bfdd;
+  --header-size: 100px;
+  --subheader-size: 40px;
+  --paragraph-size-normal: 20px;
+  --paragraph-size-semibold: 20px;
+  --paragraph-size-bold: 23px;
+  --cta-paragraph-size: 35px;
+}
+
+@font-face {
+  font-family: "HeaderBold";
+  src: url("DansestudietDisplay1-Bold.otf");
+}
+
+@font-face {
+  font-family: "SubHeader";
+  src: url("DansestudietSimple.otf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color-primary);
+}
+
+h2 {
+  color: var(--text-color-primary);
+  font-size: var(--subheader-size);
+  font-family: var(--SubHeader);
+  padding-block: 100px;
+  text-align: center;
+}
+
+header {
+  background-color: var(--bg-color-primary);
+  font-size: var(--header-size);
+  padding-inline: 20px;
+  padding-block: 20px;
+  width: auto;
+  height: auto;
+}
+
+/*WORKSHOP SEKTION*/
+.padding {
+  padding: 40px 400px;
+}
+
+footer {
+  background-color: var(--bg-color-primary);
+  padding-block: 50px;
+  width: auto;
+  height: auto;
+}

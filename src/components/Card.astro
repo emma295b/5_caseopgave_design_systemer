@@ -1,6 +1,7 @@
 ---
 const { variant } = Astro.props;
 import Button from "../components/Button.astro";
+import "../styles/style.css";
 ---
 <section>
 <Button variant="primary">Tilmeld dig</Button>
@@ -13,11 +14,11 @@ section{
  padding: 20px;
 }
 .voksenhold{
-background-color: blue;
+background-color: var(--bg-color-tertiary);
 }
 
 .bornehold{
-    background-color: red;
+    background-color: var(--primary-button-bg-color);
 }
 
 

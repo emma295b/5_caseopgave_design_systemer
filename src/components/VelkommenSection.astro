@@ -1,6 +1,7 @@
 ---
 const { variant } = Astro.props;
 import Button from "./Button.astro";
+import "../styles/style.css";
 ---
 
 <section class="velkommen">
@@ -36,9 +37,9 @@ import Button from "./Button.astro";
 .velkommen{
 		display: flex;
 		padding-inline: 20px;
-		background-color: rgb(17, 17, 17);
-        color: white;
-        font-size: 20px;
+		background-color: var(--bg-color-primary);
+        color: var(--text-color-primary);
+        font-size: var(--paragraph-size-normal);
 	}
 
 	.content{

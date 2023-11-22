@@ -1,5 +1,6 @@
 ---
 const { variant } = Astro.props;
+import "../styles/style.css";
 ---
 
 <button class={variant}>
@@ -9,14 +10,14 @@ const { variant } = Astro.props;
 
 <style>
 .primary{
- background-color: yellow;
- border-color: yellow;
+ background-color: var(--primary-button-bg-color);
+ border-color: var(--primary-button-bg-color);
 }
 
 .secondary{
-border-color: aqua;
+border-color: var(--bg-color-tertiary);
 background-color: transparent;
-color: white;
+color: var(--text-color-primary)
 }
 
     

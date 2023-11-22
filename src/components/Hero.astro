@@ -1,5 +1,6 @@
 ---
 import Button from "../components/Button.astro";
+import "../styles/style.css";
 ---
 
 <section>
@@ -31,9 +32,9 @@ import Button from "../components/Button.astro";
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 20px;
-        background-color: rgb(2, 2, 2, 0.5);
-        color: white;
+        font-size: var(--paragraph-size-normal);
+        background-color: var(--bg-color-primary);
+        color: var(--text-color-primary);
         text-align: center;
         padding: 20px;
     }
