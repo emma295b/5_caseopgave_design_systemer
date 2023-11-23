@@ -20,7 +20,7 @@ import "../styles/style.css";
             Læs mere her
         </Button>
     </div>
-    <img src={billede} alt="">
+    <img class="billede" src={billede} alt="">
 </section>
 
 
@@ -35,17 +35,14 @@ import "../styles/style.css";
     color: var(--text-color-primary);
     text-align: left;
     max-width: 900px;
-    max-height: 500px;
     margin-inline: auto;
+    margin-bottom: 3rem;
     }
 
     .billede {
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        gap: 40px;
-        display: inline-flex;
-
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     h3 {
