@@ -1,6 +1,6 @@
 :root {
   --bg-color-primary: #171717;
-  --bg-color-secondary: #f8feff;
+  --bg-color-secondary: #2D2E2E;
   --bg-color-tertiary: #54bfdd;
   --text-color-primary: #f8feff;
   --text-color-secondary: #171717;
@@ -25,6 +25,11 @@
   src: url("DansestudietSimple.otf");
 }
 
+@font-face {
+  font-family: "ParagraphNormal";
+  src: url("TitlliumWeb-Light.ttf");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -35,6 +40,10 @@ body {
   background-color: var(--bg-color-primary);
 }
 
+p {
+  font-family: var(--ParagraphNormal);
+}
+
 h2 {
   color: var(--text-color-primary);
   font-size: var(--subheader-size);
@@ -42,6 +51,7 @@ h2 {
   padding-block: 100px;
   text-align: center;
 }
+
 
 header {
   background-color: var(--bg-color-primary);
@@ -63,3 +73,5 @@ footer {
   width: auto;
   height: auto;
 }
+
+

@@ -1,0 +1,13 @@
+---
+const { titel, beskrivelse, somelinktekst,} = Astro.props;
+import "../styles/style.css";
+---
+
+<section>
+    <h3>{titel}</h3>
+    <p>{beskrivelse}</p>
+    <h3>{somelinktekst}</h3>
+    <img src="./icons/instagramicon.svg"/>
+    <img src="./icons/facebookicon.svg"/>
+    <img src="./icons/tiktokicon.svg"/>
+</section>
