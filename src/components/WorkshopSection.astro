@@ -5,36 +5,61 @@ import "../styles/style.css";
 ---
 
 <section>
-    <div class="grid">
-        <h2>{titel}</h2>
+    <div class="textcontent">
+         <div class="grid">
+        <h3>{titel}</h3>
         <p>{beskrivelse}</p>
-        <img src="./icons/klokkeicon.svg" alt="">
-        <p>{tid}</p>
-        <img src="./icons/datoicon.svg" alt="">
-        <p>{dato}</p>
-        <img src="./pictures/workshop_1_img.svg" alt="">
+            <img src="./icons/klokkeicon.svg" alt="">
+            <p>{tid}</p>
+        </div>
+        <div class="grid">
+            <img src="./icons/datoicon.svg" alt="">
+            <p>{dato}</p>
+        </div>
         <Button variant="secondary">
             Læs mere her
         </Button>
     </div>
+    <img src={billede} alt="">
 </section>
 
+
 <style>
-    h2 {
-    color: var(--text-color-tertiary);
-    line-height: normal;
+    section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: var(--bg-color-primary);
+    color: var(--text-color-primary);
+    text-align: left;
+    max-width: 900px;
+    max-height: 500px;
+    margin-inline: auto;
     }
 
-    p{
-        color: var(--text-color-primary);
-    }  
+    .billede {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 40px;
+        display: inline-flex;
 
-    div {
-        border-color: white;
-        border-style: solid;
     }
 
-    body {
-        background-color: var(--bg-color-secondary);
+    h3 {
+    width: 100%; 
+    height: 100%; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 32px; 
+    display: inline-flex"
     }
-    </style>
+
+    .textcontent{
+        padding: 60px;
+    }
+	
+</style>
