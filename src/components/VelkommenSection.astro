@@ -4,7 +4,7 @@ import Button from "./Button.astro";
 import "../styles/style.css";
 ---
 
-<section class="velkommen">
+<section>
     <div class="velkommen"><img class="styletext" src="/pictures/StyleText.webp" alt="styletext">
         <div class="content">
             <div>
@@ -24,7 +24,7 @@ import "../styles/style.css";
                     Tilmeldingen til dette års efterårssæson er fortsat åben. Læs mere under tilmelding og hold og find et hold som passer til dig og dit niveau!
                 </p>
             </div>
-            <Button variant="primary">
+            <Button class="button" variant="primary">
             Se alle vores hold
             </Button>
         </div>
@@ -36,18 +36,23 @@ import "../styles/style.css";
 <style>
 .velkommen{
 		display: flex;
-		padding-inline: 20px;
+		padding-inline: var(--web-xs);
 		background-color: var(--bg-color-primary);
         color: var(--text-color-primary);
         font-size: var(--paragraph-size-normal);
+
 	}
 
     h2, p{
         text-align: left;
     }
 
-	.content{
-		margin-inline: 50px;
-	}
+    .styletext{
+        padding: var(--web-xs);
+    }
 
+	.content{
+		margin-inline: var(--web-m);
+        padding: var(--web-xs);
+	}
 </style>

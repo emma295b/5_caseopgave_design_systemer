@@ -1,5 +1,6 @@
 :root {
   --bg-color-primary: #171717;
+  --bg-color-primary-50: #222222;
   --bg-color-secondary: #2d2e2e;
   --bg-color-tertiary: #54bfdd;
   --text-color-primary: #f8feff;
@@ -7,12 +8,18 @@
   --text-color-tertiary: #54bfdd;
   --primary-button-bg-color: #ffe000;
   --secondary-button-bg-color: #54bfdd;
-  --header-size: 100px;
+  --header-size: 50px;
   --subheader-size: 40px;
   --paragraph-size-normal: 20px;
   --paragraph-size-semibold: 20px;
   --paragraph-size-bold: 23px;
   --cta-paragraph-size: 35px;
+
+  --web-xxs: 0.5rem;
+  --web-xs: 1rem;
+  --web-s: 2.5rem;
+  --web-m: 3rem;
+  --web-xxl: 56rem;
 }
 
 @font-face {
@@ -41,11 +48,14 @@ body {
   font-family: "ParagraphNormal";
 }
 
+h1 {
+  font-size: var(--header-size);
+  font-family: "HeaderBold";
+}
+
 h2 {
   color: var(--text-color-primary);
   font-size: var(--subheader-size);
-  font-family: var(--SubHeader);
-  padding-block: 100px;
   text-align: center;
   font-family: "SubHeader";
 }
