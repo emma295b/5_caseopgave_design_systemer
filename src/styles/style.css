@@ -56,8 +56,8 @@ h2 {
 header {
   background-color: var(--bg-color-primary);
   font-size: var(--header-size);
-  padding-inline: 20px;
-  padding-block: 20px;
+  padding-inline: 10px;
+  padding-block: 5px;
   width: auto;
   height: auto;
 }
