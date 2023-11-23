@@ -4,13 +4,15 @@ import "../styles/style.css";
 ---
 
 <section class="grid">
-    <h3 class="child1">{titel}</h3>
+    <h2 class="child1">{titel}</h2>
     <p class="child2">{beskrivelse}</p>
     <div class="child3">
-    <h3>{somelinktekst}</h3>
+    <h2>{somelinktekst}</h2>
+    <div class="some">
     <img src="./icons/instagramicon.svg"/>
     <img src="./icons/facebookicon.svg"/>
     <img src="./icons/tiktokicon.svg"/>
+    </div>
     </div>
 </section>
 
@@ -18,11 +20,10 @@ import "../styles/style.css";
     .grid {
         display: grid; 
 grid-template-columns: repeat(3, 1fr); 
-grid-template-rows: repeat(3, 1fr); 
 grid-column-gap: 0px;
 grid-row-gap: 0px; 
 align-items: center;
-padding: var(--web-xs);
+margin-bottom: var(--web-s);
     }
     .child1 {
 grid-area: 1 / 2 / 2 / 3;
@@ -43,5 +44,17 @@ grid-area: 3 / 2 / 4 / 3;
 
     h3 {
         color: var(--primary-button-bg-color);
+    }
+
+    .some {
+        display: flex;
+        gap: var(--web-s);
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: var(--web-m);
+        height: var(--web-m);
     }
 </style>

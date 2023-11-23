@@ -8,8 +8,9 @@
   --text-color-tertiary: #54bfdd;
   --primary-button-bg-color: #ffe000;
   --secondary-button-bg-color: #54bfdd;
-  --header-size: 50px;
-  --subheader-size: 40px;
+  --header-size: 60px;
+  --subheader-size: 50px;
+  --secondarysubheader-size: 25px;
   --paragraph-size-normal: 20px;
   --paragraph-size-semibold: 20px;
   --paragraph-size-bold: 23px;
@@ -58,6 +59,11 @@ h2 {
   font-size: var(--subheader-size);
   text-align: center;
   font-family: "SubHeader";
+}
+
+h3 {
+  color: var(--text-color-primary);
+  font-size: var(--secondarysubheader-size);
 }
 
 header {
