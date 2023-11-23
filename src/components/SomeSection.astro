@@ -3,11 +3,38 @@ const { titel, beskrivelse, somelinktekst,} = Astro.props;
 import "../styles/style.css";
 ---
 
-<section>
-    <h3>{titel}</h3>
-    <p>{beskrivelse}</p>
+<section class="grid">
+    <h3 class="child1">{titel}</h3>
+    <p class="child2">{beskrivelse}</p>
+    <div class="child3">
     <h3>{somelinktekst}</h3>
     <img src="./icons/instagramicon.svg"/>
     <img src="./icons/facebookicon.svg"/>
     <img src="./icons/tiktokicon.svg"/>
+    </div>
 </section>
+
+<style>
+    .grid {
+        display: grid; 
+grid-template-columns: repeat(3, 1fr); 
+grid-template-rows: repeat(3, 1fr); 
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
+align-items: center;
+    }
+    .child1 {
+grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .child2 {
+grid-area: 2 / 2 / 3 / 3;
+    }
+    .child3 {
+grid-area: 3 / 2 / 4 / 3;
+    }
+
+    h3, p {
+        color: var(--text-color-primary);
+    }
+</style>
