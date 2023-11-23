@@ -1,6 +1,6 @@
 :root {
   --bg-color-primary: #171717;
-  --bg-color-secondary: #2D2E2E;
+  --bg-color-secondary: #2d2e2e;
   --bg-color-tertiary: #54bfdd;
   --text-color-primary: #f8feff;
   --text-color-secondary: #171717;
@@ -17,17 +17,17 @@
 
 @font-face {
   font-family: "HeaderBold";
-  src: url("DansestudietDisplay1-Bold.otf");
+  src: url(/font/DansestudietDisplay1-Bold.otf) format("opentype");
 }
 
 @font-face {
   font-family: "SubHeader";
-  src: url("DansestudietSimple.otf");
+  src: url(/font/DansestudietSimple.otf) format("opentype");
 }
 
 @font-face {
   font-family: "ParagraphNormal";
-  src: url("TitlliumWeb-Light.ttf");
+  src: url("./font/TitilliumWeb-Light.ttf") format("truetype");
 }
 
 * {
@@ -38,10 +38,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-color-secondary);
-}
-
-p {
-  font-family: var(--ParagraphNormal);
+  font-family: "ParagraphNormal";
 }
 
 h2 {
@@ -50,8 +47,8 @@ h2 {
   font-family: var(--SubHeader);
   padding-block: 100px;
   text-align: center;
+  font-family: "SubHeader";
 }
-
 
 header {
   background-color: var(--bg-color-primary);
@@ -73,5 +70,3 @@ footer {
   width: auto;
   height: auto;
 }
-
-
