@@ -1,21 +1,24 @@
 ---
-const { variant } = Astro.props;
+const { titel, beskrivelse} = Astro.props;
 import Button from "../components/Button.astro";
 import "../styles/style.css";
 ---
 <section>
+    <h3>{titel}</h3>
+    <p>{beskrivelse}</p>
 <Button variant="primary">Tilmeld dig</Button>
 </section>
 
 
 <style>
-.voksenhold{
-background-color: var(--bg-color-tertiary);
-}
 
-.bornehold{
-    background-color: var(--primary-button-bg-color);
-}
+    section {
+        background-color: var(--bg-color-secondary);
+    }
+
+    h3, p {
+        color: var(--text-color-primary);
+    }
 
 
 </style>
