@@ -8,7 +8,7 @@
   --text-color-tertiary: #54bfdd;
   --primary-button-bg-color: #ffe000;
   --secondary-button-bg-color: #54bfdd;
-  --brand-header-text-color: #40C9A2;
+  --brand-header-text-color: #40c9a2;
   --header-size: 60px;
   --subheader-size: 50px;
   --secondarysubheader-size: 25px;
@@ -51,6 +51,7 @@ body {
   padding: 0;
   background-color: var(--bg-color-secondary);
   font-family: "ParagraphNormal";
+  font-size: var(--paragraph-size-normal);
 }
 
 h1 {
@@ -81,7 +82,7 @@ header {
 
 /*WORKSHOP SEKTION*/
 .padding {
-  padding: var(--web-l), var(--web-xxl);
+  padding: var(--web-l) var(--web-xxl);
 }
 
 footer {
