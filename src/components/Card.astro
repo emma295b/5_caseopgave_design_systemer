@@ -3,7 +3,7 @@ const { titel, beskrivelse, billede} = Astro.props;
 import Button from "../components/Button.astro";
 import "../styles/style.css";
 ---
-<section>
+<section class="flex">
     <img src={billede} alt="">
     <h3>{titel}</h3>
     <p>{beskrivelse}</p>
