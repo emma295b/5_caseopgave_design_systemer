@@ -12,9 +12,10 @@
   --subheader-size: 50px;
   --secondarysubheader-size: 25px;
   --paragraph-size-normal: 20px;
-  --paragraph-size-semibold: 20px;
-  --paragraph-size-bold: 23px;
+  --paragraph-size-semibold: 500;
+  --paragraph-size-bold: 700;
   --cta-paragraph-size: 35px;
+  --button-font-size: 15px;
 
   --web-xxs: 0.5rem;
   --web-xs: 1rem;
