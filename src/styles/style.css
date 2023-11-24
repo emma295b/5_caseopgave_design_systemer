@@ -69,8 +69,8 @@ h3 {
 header {
   background-color: var(--bg-color-primary);
   font-size: var(--header-size);
-  padding-inline: 10px;
-  padding-block: 5px;
+  padding-inline: var(--web-xs);
+  padding-top: var(--web-xs);
   width: auto;
   height: auto;
 }
