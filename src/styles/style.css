@@ -21,6 +21,7 @@
   --web-xs: 1rem;
   --web-s: 2.5rem;
   --web-m: 3rem;
+  --web-l: 20rem;
   --web-xxl: 56rem;
 }
 
@@ -70,20 +71,20 @@ h3 {
 header {
   background-color: var(--bg-color-primary);
   font-size: var(--header-size);
-  padding-inline: 10px;
-  padding-block: 5px;
+  padding-inline: var(--web-xs);
+  padding-top: var(--web-xs);
   width: auto;
   height: auto;
 }
 
 /*WORKSHOP SEKTION*/
 .padding {
-  padding: 40px 400px;
+  padding: var(--web-l), var(--web-xxl);
 }
 
 footer {
   background-color: var(--bg-color-primary);
-  padding-block: 50px;
+  padding-block: var(--web-m);
   width: auto;
   height: auto;
 }
