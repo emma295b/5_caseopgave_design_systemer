@@ -5,16 +5,18 @@ import "../styles/style.css";
 ---
 
 <section>
-    <div class="textcontent">
-         <div class="grid">
-        <h2>{titel}</h2>
-        <h3>{beskrivelse}</h3>
-            <img src="./icons/klokkeicon.svg" alt="">
-            <h3>{tid}</h3>
-        </div>
-        <div class="grid">
-            <img src="./icons/datoicon.svg" alt="">
-            <h3>{dato}</h3>
+    <div>
+        <div>
+            <h2>{titel}</h2>
+            <h3>{beskrivelse}</h3>
+            <div class="grid">
+                <img src="./icons/klokkeicon.svg" alt="">
+                <h3>{tid}</h3>
+            </div>
+            <div class="grid">
+                <img src="./icons/datoicon.svg" alt="">
+                <h3>{dato}</h3>
+            </div>
         </div>
         <Button variant="secondary">
             Læs mere her
@@ -52,6 +54,11 @@ import "../styles/style.css";
     justify-content: center; 
     align-items: center; 
     display: inline-flex"
+    }
+
+    .grid{
+    display: flex;
+    flex-direction: column;
     }
 	
 </style>
